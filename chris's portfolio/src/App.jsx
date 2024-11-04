@@ -1,28 +1,13 @@
-import React from 'react'
-import Navigation from './components/Navigation'
-import Header from './components/Header'
-import Contact from './components/Contact'
-//import Footer from './components/Footer'
-//import About from './components/About'
-//import Project from './components/Project'
-
-
-import './App.css'
+import { Outlet } from 'react-router-dom';
+import Nav from './components/Nav';
 
 function App() {
 
   return (
-    <div>
-      <Navigation />
-      <Header />
-      <main>
-        {/* <About /> */}
-        {/* <Project /> */}
-        <Contact />
-      </main>
-      {/* <Footer /> */}
-
-    </div>
+    <>
+    <Nav />
+    <Outlet />
+    </>
   )
   
 }

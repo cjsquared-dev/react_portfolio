@@ -4,7 +4,7 @@ import headshot from "../assets/images/Headshot.jpeg"
 export default function About() {
     return (
         <div className="container my-5">
-            <h2 className=" mb-4">About Me</h2>
+            <h2 className="mb-4">About Me</h2>
 
             <div className="d-flex flex-column align-items-center">
             <img

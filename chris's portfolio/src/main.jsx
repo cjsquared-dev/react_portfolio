@@ -5,7 +5,7 @@ import './index.css';
 import App from './App';
 import Error from './components/Error';
 import About from './components/About';
-import Portfolio from './components/Projects';
+import Project from './components/Portfolio';
 import Contact from './components/Contact';
 import Resume from './components/Resume';
 
@@ -25,7 +25,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/portfolio',
-        element: <Portfolio />
+        element: <Project />
       },
       {
         path: '/contact',

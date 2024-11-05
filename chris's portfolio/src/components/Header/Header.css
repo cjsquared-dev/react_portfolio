@@ -1,15 +1,33 @@
 .header {
-    background-color: #1C2541;
-    color: white;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    padding: 1em;
-    text-align: left;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+    background-image: url('../../assets/images/header.jpg'); /* Adjust path as needed */
+    background-size: cover; /* Ensures the image covers the entire header area */
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white; /* Adjust text color for readability */
+    padding: 40px 0; /* Add some vertical padding */
+    text-align: center; /* Center text */
+}
 
+.header {
+  min-height: 500px;
+}
   .header-title {
     font-size: 4em;
-    font-weight: bold;
+    color: white;
   }
+
+  .header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+    z-index: 1; /* Ensures overlay is on top of the background */
+}
+
+.header-title, .navbar {
+  position: relative;
+  z-index: 2; /* Ensures text and nav are above the overlay */
+}

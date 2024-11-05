@@ -22,11 +22,10 @@ export default function Footer() {
 const footerStyle = {
     display: 'flex',
     justifyContent: 'center',
-    alignItems: 'center',
-    padding: '20px',
-    color: 'black',
     flexDirection: 'column',
-    minHeight: '100vh',
+    alignItems: 'center',
+    color: 'black',
+    minHeight: '10vh',
 };
 
 

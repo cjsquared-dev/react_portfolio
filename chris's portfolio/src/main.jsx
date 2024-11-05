@@ -3,9 +3,9 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 import App from './App';
-import ErrorPage from './pages/ErrorPage';
+import Error from './components/Error/Error';
 import About from './components/About/About';
-import Portfolio from './components/Portfolio/Portfolio';
+import Portfolio from './components/Portfolio/Projects';
 import Contact from './components/Contact/Contact';
 import Resume from './components/Resume/Resume';
 
@@ -13,7 +13,7 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
-    errorElement: <ErrorPage />,
+    errorElement: <Error />,
     children: [
       {
         index: true,

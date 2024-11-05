@@ -48,20 +48,25 @@ const projects = [
     },
 ];
 
-export default function PortfolioPage() {
+export default function Portfolio() {
     return (
-        <section id='projects'>
-            <h2>Portfolio</h2>
-            <div className='projects-container'>
+        <section id='projects' className='container my-5'>
+            <h2 className='text-center mb -4'>Portfolio</h2>
+            <div className='row'>
                 {projects.map((project, index) => (
-                    <div className='project item' key = {index}>
+                    <div className='col-md-4 mb-4' key = {index}>
+                        <div className='card'>
                         <a href={project.deployedLink} target='_blank' rel='noopener noreferrer'>
-                        <img src='{project.image}' alt={project.name} />
-                        <h3>{project.name}</h3>
+                        <img src='{project.image}' alt={project.name} className='card-img-top' />
                     </a>
-
-                    <a href={project.githubLink} target="_blank" rel='noopener noreferrer'>GitHub Link</a>
+                    <div className='card-body'>
+                        <h5 className='card-title'>{project.name}</h5>
+                        <a href={project.githubLink} target="_blank" rel='noopener noreferrer' className='btn btn-primary'>
+                        GitHub Link
+                        </a>
                     </div>
+                </div>
+            </div>
                 ))}
             </div>
         </section>

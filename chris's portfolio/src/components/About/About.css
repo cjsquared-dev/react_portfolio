@@ -1,9 +1,0 @@
-.about-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0 30px;
-  z-index: 1;
-  font-size: large;
-}

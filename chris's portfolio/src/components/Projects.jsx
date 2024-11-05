@@ -1,7 +1,6 @@
 import React from 'react';
 
 //sample projects
-
 const projects = [
     {
         name: 'Project 1',
@@ -48,6 +47,8 @@ const projects = [
     },
 ];
 
+
+//Function to display the projects in the portfolio page as a grid of cards
 export default function Portfolio() {
     return (
         <section id='projects' className='container my-5'>

@@ -1,5 +1,17 @@
+.footer-icon {
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
+  opacity: 0.5; /* Initial opacity */
+  transition: opacity 0.3s ease; /* Smooth transition */
+
+}
+
+.footer-icon:hover {
+  opacity: 1; /* Full opacity on hover */
+}
+
 .footer {
-    color: #ffffff;
-    padding: 1em;
-    text-align: center;
-  }
+  background-color: #f8f9fa; /* Light background color */
+  border-top: 1px solid #dee2e6; /* Border for separation */
+}

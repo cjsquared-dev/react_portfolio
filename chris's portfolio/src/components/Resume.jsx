@@ -1,15 +1,22 @@
-export default function ResumePage() {
+import React from 'react';
+import "bootstrap/dist/css/bootstrap.min.css";
+import resumeFile from '../assets/resume.pdf'
+
+
+export default function Resume() {
     return (
-        <div className="resume">
-            <header className="resume-header">
-                <h1>Your Name</h1>
-                <p>Phone: 555-555-5555</p>
-                <p>Email: your.email@example.com</p>
-                <p>LinkedIn: linkedin.com/in/yourprofile</p>
-                <p>Portfolio: yourportfolio.com</p>
+        <div className="container my-5">
+            <header className="text-left mb-4">
+                <h1>Chris Johnson</h1>
             </header>
 
-            <section className="summary">
+            <section className='text-left mb-4'>
+                <a href={resumeFile} download className='btn btn-primary'>
+                    Download Resume
+                </a>
+            </section>
+
+            <section className="text-left mb-4">
                 <h2>Summary</h2>
                 <p>
                     Highly skilled front-end web developer with a background in graphic design. 
@@ -17,20 +24,20 @@ export default function ResumePage() {
                 </p>
             </section>
 
-            <section className="skills">
-                <h2>Skills</h2>
-                <ul>
-                    <li>JavaScript</li>
-                    <li>React</li>
-                    <li>HTML/CSS</li>
-                    <li>MERN Stack</li>
-                    <li>SQL</li>
+            <section className="mb-4">
+            <h2>Proficiencies</h2>
+                <ul className="list-group list-group-flush">
+                    <li className="list-group-item">JavaScript</li>
+                    <li className="list-group-item">React</li>
+                    <li className="list-group-item">HTML/CSS</li>
+                    <li className="list-group-item">MERN Stack</li>
+                    <li className="list-group-item">SQL</li>
                 </ul>
             </section>
 
-            <section className="experience">
+            <section className="mb-4">
                 <h2>Experience</h2>
-                <div className="job">
+                <div className="mb-3">
                     <h3>Job Title - Company Name</h3>
                     <p>Location | Dates</p>
                     <ul>
@@ -43,8 +50,8 @@ export default function ResumePage() {
 
             <section className="education">
                 <h2>Education</h2>
-                <p>Degree - Institution Name</p>
-                <p>Year of Graduation</p>
+                <p>Master of Science in Information Systems - University of Utah</p>
+                <p>Class of 2016</p>
             </section>
         </div>
     );

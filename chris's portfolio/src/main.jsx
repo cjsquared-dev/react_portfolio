@@ -4,10 +4,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 import App from './App';
 import ErrorPage from './pages/ErrorPage';
-import AboutPage from './pages/AboutPage';
-import PortfolioPage from './pages/PortfolioPage';
-import ContactPage from './pages/ContactPage';
-import ResumePage from './pages/ResumePage';
+import About from './components/About/About';
+import Portfolio from './components/Portfolio/Portfolio';
+import Contact from './components/Contact/Contact';
+import Resume from './components/Resume/Resume';
 
 const router = createBrowserRouter([
   {
@@ -17,23 +17,23 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <AboutPage />
+        element: <About />
       },
       {
         path: '/about',
-        element: <AboutPage />
+        element: <About />
       },
       {
         path: '/portfolio',
-        element: <PortfolioPage />
+        element: <Portfolio />
       },
       {
         path: '/contact',
-        element: <ContactPage />
+        element: <Contact />
       },
       {
         path: '/resume',
-        element: <ResumePage />
+        element: <Resume />
       },
     ],
   },

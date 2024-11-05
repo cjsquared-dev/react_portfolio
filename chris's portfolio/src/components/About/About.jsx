@@ -1,12 +1,13 @@
 import React from "react";
+import "./About.css";
 
-const About = () => {
+export default function AboutPage() {
     return (
         <div className="about-container">
             <h2>About Me</h2>
             <img
-                src="https://via.placeholder.com/150"
-                alt="Chris Johnson Headshot"
+                src="./images/Headshot.jpg"
+                alt="Headshot"
                 className='about-image'
             />
             <p>
@@ -19,5 +20,3 @@ const About = () => {
         </div>
     );
 };
-
-export default About;

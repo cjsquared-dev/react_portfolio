@@ -6,7 +6,7 @@ export default function Nav({ links }) {
           <div className="container-fluid">
             <div className="collaps navbar-collapse">
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                {links.map((link) => link)}
+                {links.map((link, index) => link)}
               </ul>
             </div>
           </div>

@@ -1,0 +1,13 @@
+.navbar {
+    display : flex;
+
+}
+
+.navbar-nav {
+    display : flex;
+    font-size : 1.5rem;
+    list-style : none;
+    padding : 0;
+    gap: 2rem;
+    margin: 12rem;
+}

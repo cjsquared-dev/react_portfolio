@@ -1,0 +1,14 @@
+.nav-link {
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.nav-link:hover {
+    color: #dc1c79; /* Change to a lighter color on hover */
+}
+
+.nav-link.active {
+    color: #ffffff; /* Highlight color for the active link */
+    font-weight: bold; /* Optional: make active link bold */
+}
+
+

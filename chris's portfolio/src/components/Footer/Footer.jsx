@@ -1,7 +1,7 @@
 import React from "react";
-
-import githubLogo from "../assets/githubLogo.png";
-import linkedinLogo from "../assets/linkedinLogo.png";
+import "./Footer.css";
+import githubLogo from "../../assets/githubLogo.png";
+import linkedinLogo from "../../assets/linkedinLogo.png";
 
 export default function Footer() {
     return (
@@ -23,8 +23,9 @@ const footerStyle = {
     display: 'flex',
     justifyContent: 'bottom',
     padding: '20px',
-    backgroundColor: 'gray',
     color: 'black',
+    flexDirection: 'column ',
+    minHeight: '100vh',
 };
 
 const iconStyle = {

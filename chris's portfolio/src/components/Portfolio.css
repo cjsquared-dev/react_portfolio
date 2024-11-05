@@ -1,0 +1,31 @@
+.card {
+    position: relative;
+    transition: transform 0.2s ease-in-out;
+    border: none; /* Optional: remove card border */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Slightly scale up the card on hover */
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+    opacity: 0; /* Initially transparent */
+    transition: opacity 0.3s ease; /* Smooth transition */
+    z-index: 1; /* Sit below text but above the background image */
+}
+
+.card:hover::before {
+    opacity: 1; /* Show overlay on hover */
+}
+
+.card-body {
+    position: relative;
+    z-index: 2; /* Ensure content is above overlay */
+}

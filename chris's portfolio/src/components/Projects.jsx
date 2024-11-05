@@ -1,4 +1,5 @@
 import React from 'react';
+import githubLogo from '../assets/images/githubLogo.png';
 
 //sample projects
 const projects = [
@@ -62,8 +63,8 @@ export default function Portfolio() {
                     </a>
                     <div className='card-body'>
                         <h5 className='card-title'>{project.name}</h5>
-                        <a href={project.githubLink} target="_blank" rel='noopener noreferrer' className='btn btn-primary'>
-                        GitHub Link
+                        <a href={project.githubLink} target="_blank" rel='noopener noreferrer' className='btn btn-light'>
+                            <img src={githubLogo} alt='Github Logo' style={{width: '20px', height: '20px'}} />
                         </a>
                     </div>
                 </div>

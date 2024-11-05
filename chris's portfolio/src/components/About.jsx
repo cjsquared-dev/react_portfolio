@@ -1,7 +1,7 @@
 import React from "react";
 import headshot from "../assets/images/Headshot.jpeg"
 
-export default function AboutPage() {
+export default function About() {
     return (
         <div className="container my-5">
             <h2 className=" mb-4">About Me</h2>

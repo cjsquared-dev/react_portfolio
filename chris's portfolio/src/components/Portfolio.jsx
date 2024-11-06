@@ -1,4 +1,3 @@
-import React from 'react';
 import './Portfolio.css';
 import githubLogo from '../assets/images/githubLogo.png';
 import css from '../assets/projects/css_cheatsheet.jpg';

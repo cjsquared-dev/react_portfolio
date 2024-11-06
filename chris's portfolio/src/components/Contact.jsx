@@ -1,6 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React, {useState} from "react";
 
+// a functional component to display the contact form
 const Contact = () => {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
@@ -13,12 +14,12 @@ const Contact = () => {
             setErrors((prev) => ({...prev, [field]: `${field} is required`}));
         }
     };
-
+    // add a function to validate email
     const validateEmail = (email) => {
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         return emailRegex.test(email);
     };
-
+    // add a function to handle email change
     const handleEmailChange = (e) => {
         const value = e.target.value;
         setEmail(e.target.value);
@@ -28,7 +29,7 @@ const Contact = () => {
             setErrors((prev) => ({...prev, email: ""}));
         }
     };
-
+    //add a function to handle form submission
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log('Form submitted:', {name, email, message});

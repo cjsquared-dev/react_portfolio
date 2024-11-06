@@ -18,8 +18,9 @@ export default function Resume() {
             <section className="text-left mb-4">
                 <h2>Summary</h2>
                 <p>
-                    Highly skilled front-end web developer with a background in graphic design. 
-                    Committed to simplifying complex challenges by developing elegant and efficient solutions.
+                    Seasoned Cyber Security professional with a Master of Science in Information Systems from the University of Utah. 
+                    Currently working as a Senior Security Partner at Adobe, Inc. in Lehi, UT. 
+                    Currently studying Full Stack Web development to earn proficiencies in JavaScript, React, HTML/CSS, MERN Stack, and SQL to transition into a career in Software Engineering within the Security Industry.
                 </p>
             </section>
 
@@ -37,11 +38,9 @@ export default function Resume() {
             <section className="mb-4">
                 <h2>Experience</h2>
                 <div className="mb-3">
-                    <h3>Job Title - Company Name</h3>
-                    <p>Location | Dates</p>
+                    <h3>Senior Security Partner - Adobe, Inc.</h3>
+                    <p>Lehi, UT | April 2018 - Present</p>
                     <ul>
-                        <li>Responsibility or achievement 1</li>
-                        <li>Responsibility or achievement 2</li>
                     </ul>
                 </div>
                 {/* Add more job entries as needed */}

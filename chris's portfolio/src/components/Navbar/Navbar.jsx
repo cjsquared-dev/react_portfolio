@@ -1,5 +1,6 @@
 import './Navbar.css';
 
+// eslint-disable-next-line react/prop-types
 export default function Nav({ links }) {
     return (
         <nav className="navbar navbar-expand-lg navbar-light">

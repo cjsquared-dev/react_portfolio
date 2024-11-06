@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React, {useState} from "react";
 
 const Contact = () => {
@@ -5,6 +6,7 @@ const Contact = () => {
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
     const [errors, setErrors] = useState({name: "", email: "", message: ""});
+    const [isSubmitted, setIsSubmitted] = useState(false);
 
     const handleBlur = (field) => {
         if (!field) {
@@ -34,6 +36,7 @@ const Contact = () => {
         setEmail("");
         setMessage("");
         setErrors({name: "", email: "", message: ""});
+        setIsSubmitted(true);
     };
 
     return (
@@ -47,7 +50,10 @@ const Contact = () => {
                         id="name"
                         className="form-control"
                         value={name}
-                        onChange={(e) => setName(e.target.value)}
+                        onChange={(e) => {
+                            setName(e.target.value);
+                            setIsSubmitted(false);
+                        }}
                         onBlur={() => handleBlur("name")}
                         required
                     />
@@ -60,7 +66,10 @@ const Contact = () => {
                         id="email"
                         className="form-control"
                         value={email}
-                        onChange={handleEmailChange}
+                        onChange={(e) => {
+                            handleEmailChange(e);
+                            setIsSubmitted(false);
+                        }}
                         onBlur={() => handleBlur("email")}
                         required
                     />
@@ -72,7 +81,10 @@ const Contact = () => {
                         id="message"
                         className="form-control"
                         value={message}
-                        onChange={(e) => setMessage(e.target.value)}
+                        onChange={(e) => {
+                            setMessage(e.target.value);
+                            setIsSubmitted(false);
+                        }}
                         onBlur={() => handleBlur("message")}
                         required
                     />
@@ -80,6 +92,7 @@ const Contact = () => {
                 </div>
                 <button type="submit" className="btn btn-primary mt-2">Send Message</button>
             </form>
+            {isSubmitted && <p className="text-success mt-2">Message Sent Successfully!</p>}
         </div>
     );
 };

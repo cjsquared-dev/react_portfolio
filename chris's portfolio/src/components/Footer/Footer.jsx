@@ -1,4 +1,3 @@
-import React from "react";
 import "./Footer.css";
 import githubLogo from "../../assets/images/githubLogo.png";
 import linkedinLogo from "../../assets/images/linkedinLogo.png";
@@ -13,7 +12,7 @@ export default function Footer() {
                 <a href="https://www.linkedin.com/in/christopherjohnson1006/" target="_blank" rel="noopener noreferrer">
                     <img src={linkedinLogo} alt="LinkedIn Logo" className="footer-icon" />
                 </a>
-                © 2024 Chris's Portfolio
+                © 2024 Chris&apos;s Portfolio
             </p>
         </footer>
     );

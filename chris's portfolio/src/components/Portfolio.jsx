@@ -61,12 +61,12 @@ export default function Project() {
                             <div style={{ backgroundImage: `url(${project.image})`, backgroundSize: 'cover', height: '300px', position: 'relative' }}>
                                 <div className='card-body d-flex flex-column justify-content-end align-items-center'>
                                     <h5 className='card-title text-white' style={{
-                                                                    textShadow: '1px 1px 2px rgba(0, 0, 0, 0.7)', // Text shadow for better visibility
-                                                                    backgroundColor: 'rgba(0, 0, 0, 0.5)', // Semi-transparent background
-                                                                    padding: '10px', // Add some padding for better appearance
-                                                                    borderRadius: '5px', // Rounded corners for the background
-                                                                    fontSize: '1.25rem', // Increased font size
-                                                                    fontWeight: 'bold' // Make it bold
+                                        textShadow: '1px 1px 2px rgba(0, 0, 0, 0.7)', // Text shadow for better visibility
+                                        backgroundColor: 'rgba(0, 0, 0, 0.5)', // Semi-transparent background
+                                        padding: '10px', // Add some padding for better appearance
+                                        borderRadius: '5px', // Rounded corners for the background
+                                        fontSize: '1.25rem', // Increased font size
+                                        fontWeight: 'bold' // Make it bold
                                     }}>{project.name}</h5>
                                     <a href={project.githubLink} target="_blank" rel='noopener noreferrer' className='btn btn-light'>
                                         <img src={githubLogo} alt='Github Logo' style={{ width: '20px', height: '20px' }} />

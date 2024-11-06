@@ -1,17 +1,17 @@
 // eslint-disable-next-line no-unused-vars
-import React, {useState} from "react";
+import React, { useState } from "react";
 
 // a functional component to display the contact form
 const Contact = () => {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
-    const [errors, setErrors] = useState({name: "", email: "", message: ""});
+    const [errors, setErrors] = useState({ name: "", email: "", message: "" });
     const [isSubmitted, setIsSubmitted] = useState(false);
 
     const handleBlur = (field) => {
         if (!field) {
-            setErrors((prev) => ({...prev, [field]: `${field} is required`}));
+            setErrors((prev) => ({ ...prev, [field]: `${field} is required` }));
         }
     };
     // add a function to validate email
@@ -24,19 +24,19 @@ const Contact = () => {
         const value = e.target.value;
         setEmail(e.target.value);
         if (value && !validateEmail(value)) {
-            setErrors((prev) => ({...prev, email: "Invalid email Address"}));
-        }  else {
-            setErrors((prev) => ({...prev, email: ""}));
+            setErrors((prev) => ({ ...prev, email: "Invalid email Address" }));
+        } else {
+            setErrors((prev) => ({ ...prev, email: "" }));
         }
     };
     //add a function to handle form submission
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log('Form submitted:', {name, email, message});
+        console.log('Form submitted:', { name, email, message });
         setName("");
         setEmail("");
         setMessage("");
-        setErrors({name: "", email: "", message: ""});
+        setErrors({ name: "", email: "", message: "" });
         setIsSubmitted(true);
     };
 

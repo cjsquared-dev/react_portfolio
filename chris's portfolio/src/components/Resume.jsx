@@ -18,14 +18,14 @@ export default function Resume() {
             <section className="text-left mb-4">
                 <h2>Summary</h2>
                 <p>
-                    Seasoned Cyber Security professional with a Master of Science in Information Systems from the University of Utah. 
-                    Currently working as a Senior Security Partner at Adobe, Inc. in Lehi, UT. 
+                    Seasoned Cyber Security professional with a Master of Science in Information Systems from the University of Utah.
+                    Currently working as a Senior Security Partner at Adobe, Inc. in Lehi, UT.
                     Currently studying Full Stack Web development to earn proficiencies in JavaScript, React, HTML/CSS, MERN Stack, and SQL to transition into a career in Software Engineering within the Security Industry.
                 </p>
             </section>
 
             <section className="mb-4">
-            <h2>Proficiencies</h2>
+                <h2>Proficiencies</h2>
                 <ul className="list-group list-group-flush">
                     <li className="list-group-item">JavaScript</li>
                     <li className="list-group-item">React</li>

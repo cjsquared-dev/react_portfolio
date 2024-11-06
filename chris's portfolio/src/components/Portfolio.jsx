@@ -1,6 +1,6 @@
 import './Portfolio.css';
 import githubLogo from '../assets/images/githubLogo.png';
-import css from '../assets/projects/css_cheatsheet.jpg';
+import css from '../assets/projects/CSS_Cheatsheet.jpg';
 import led from '../assets/projects/led-wall.png';
 import pastel from '../assets/projects/pastel_puzzles.jpg'
 import calculator from '../assets/projects/react_calculator.png';
